@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CrudTripTravel.Models.NovaPasta.TBPromocoes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <link rel="stylesheet" href="~/css/tt_promocao.css" />
+</head>
+<header>
+    <nav class="navbar navbar-light">
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="Destinos">Destinos</a>
+        <a asp-controller="Home" asp-action="Promocoes">Promoções</a>
+        <a asp-controller="Home" asp-action="Contatos">Contatos</a>
+    </nav>
+</header>
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TBClientes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TBDestinos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.promocao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TBClientes.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TBDestinos.destino)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.promocao)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_promocoes">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_promocoes">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_promocoes">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

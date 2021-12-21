@@ -1,0 +1,102 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(222, 230, 233);
+}
+
+header.rio {
+    background: url("../img/rio02.jpg");
+    height: 80vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(95%);
+}
+
+header.roma {
+    background: url("../img/roma.jpg");
+    height: 80vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(95%);
+}
+
+header.mexico {
+    background: url("../img/mexico.jpg");
+    height: 80vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(95%);
+}
+
+header.peru {
+    background: url("../img/peru.jpg");
+    height: 80vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(95%);
+}
+
+header.china {
+    background: url("../img/china.jpg");
+    height: 80vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(95%);
+}
+
+header.jordania {
+    background: url("../img/jordania.jpg");
+    height: 80vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(95%);
+}
+
+header.india {
+    background: url("../img/india.jpg");
+    height: 80vh;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.568);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(95%);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+div.titulo {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div.texto {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

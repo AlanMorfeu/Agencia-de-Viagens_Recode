@@ -1,0 +1,60 @@
+﻿@model IEnumerable<CrudTripTravel.Models.NovaPasta.TBDestinos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/tt_promocao.css" />
+</head>
+<header>
+    <nav class="navbar navbar-light">
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="Destinos">Destinos</a>
+        <a asp-controller="Home" asp-action="Promocoes">Promoções</a>
+        <a asp-controller="Home" asp-action="Contatos">Contatos</a>
+    </nav>
+</header>
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.destino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.local_destino)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.data)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.destino)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.local_destino)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.data)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_destinos">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_destinos">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_destinos">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

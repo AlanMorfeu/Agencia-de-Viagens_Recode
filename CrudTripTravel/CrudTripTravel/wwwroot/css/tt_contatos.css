@@ -1,0 +1,39 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(222, 230, 233);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(126,164,233);
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.315);
+}
+
+    .navbar a {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+        
+    }
+
+
+.btnAtualizar {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(101, 146, 230);
+    color: #fff;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+
+    .btnAtualizar:hover {
+        background-color: rgb(15, 13, 114);
+    }
